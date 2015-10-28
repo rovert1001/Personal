@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+      
+      
+    Scanner hey;
+    
+    hey = new Scanner(System.in);
+    
+    String hallo = hey.nextLine();
+    
+    
+    System.out.println(hallo);
+    
+    hey.close();
+    
+    
+  }
+}
