@@ -36,7 +36,7 @@ class Main {
         System.out.println("Chums ought to know these sorts of things!!!");
         System.out.println("And please don't lie, I hate liers...");
         
-        String b = a.nextLine();
+        String b = a.nextLine(); 
         
         
         
