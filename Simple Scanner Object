@@ -1,19 +1,31 @@
 import java.util.Scanner;
 class Main {
-  public static void main(String[] args) {
-      
-      
-    Scanner hey;
-    
-    hey = new Scanner(System.in);
-    
-    String hallo = hey.nextLine();
-    
-    
-    System.out.println(hallo);
-    
-    hey.close();
-    
-    
-  }
+    public static void main(String[] args) {
+        
+        
+        Scanner a = new Scanner(System.in);
+        
+        
+        System.out.println("SCHOOL SURVEY");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Are you satisfied with your school?");
+        String b = a.next();
+        if (b.equals ("y")) {
+            System.out.println("Good");
+        } else if (b.equals ("n")) {
+            System.out.println("Well then...");
+        } else {
+            System.out.println("This survey runs on y and n answers.");
+            System.out.println("Please use y and n from now on.");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("The survey will now restart...");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("Press ENTER");
+            }
+        
+   }
 }
