@@ -13,9 +13,46 @@ class Main {
         System.out.println("Are you satisfied with your school?");
         String b = a.next();
         if (b.equals ("y")) {
-            System.out.println("Good");
+            System.out.println("Good, oh by the way...");
+            System.out.println("What is your name? I don't think you said...");
+            System.out.println("");
+            System.out.println("----------------DO NOT WORRY, THIS IS A NON Y & N QUESTION-----------------");
+            System.out.println("-------------------------PUT YOUR REAL NAME PLEASE-------------------------");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            
+            Scanner c = new Scanner(System.in);
+            String d = c.nextLine();
+            
+            System.out.println("");
+            System.out.println("");
+            ("Well ")
+            
+
         } else if (b.equals ("n")) {
             System.out.println("Well then...");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("What is your name? I don't think you said...");
+            System.out.println("");
+            System.out.println("----------------DO NOT WORRY, THIS IS A NON Y & N QUESTION-----------------");
+            System.out.println("-------------------------PUT YOUR REAL NAME PLEASE-------------------------");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            
+            Scanner c = new Scanner(System.in);
+            String d = c.nextLine();
+            
+            System.out.println("");
+            System.out.println("");
+            System.out.print("Blimey, isn't ");
+            System.out.print(d);
+            System.out.println(" the name of a prat!");
+            
+            
         } else {
             System.out.println("This survey runs on y and n answers.");
             System.out.println("Please use y and n from now on.");
@@ -26,6 +63,6 @@ class Main {
             System.out.println("");
             System.out.println("Press ENTER");
             }
-        
    }
+   
 }
