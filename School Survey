@@ -11,8 +11,12 @@ class Main {
         System.out.println("");
         System.out.println("");
         System.out.println("Are you satisfied with your school?");
+        System.out.println("");
+        System.out.println("");
         String b = a.next();
         if (b.equals ("y")) {
+            System.out.println("");
+            System.out.println("");
             System.out.println("Good, oh by the way...");
             System.out.println("What is your name? I don't think you said...");
             System.out.println("");
@@ -27,7 +31,31 @@ class Main {
             
             System.out.println("");
             System.out.println("");
-            ("Well ")
+            System.out.print("Well if ");
+            System.out.print(d);
+            System.out.println(" isn't another word for god, I don't know what else could be.");
+            System.out.println("");
+            System.out.println("Would you like to continue, or shall we take a break?");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("----------------PRESS N TO TAKE A BREAK AND Y TO CONTINUE-----------------");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            
+            Scanner e = new Scanner(System.in);
+            String f = e.next();
+            
+            if (f.equals ("y")) {
+                System.out.println("");
+                System.out.println("");
+                System.out.println("Good choice.");
+            } else if (f.equals ("n")) {
+                System.out.println("");
+                System.out.println("");
+                System.out.println("--------WAIT AN APPROPRIATE AMOUNT OF TIME AND THEN PRESS ENTER TO CONTINUE--------");
+                System.out.println("DON'T FORGET YOUR TEA");
+            }
             
 
         } else if (b.equals ("n")) {
@@ -51,6 +79,40 @@ class Main {
             System.out.print("Blimey, isn't ");
             System.out.print(d);
             System.out.println(" the name of a prat!");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("I will give you another chance.");
+            System.out.println("");
+            System.out.println("Are you satisfied with your school?");
+            
+            Scanner e = new Scanner(System.in);
+            String f = e.next();
+            
+            if (f.equals ("y")) {
+                System.out.println("Well when have you been made to see reason?");
+            } else if (f.equals ("n")) {
+                System.out.println("Well blimey you bloody bastard.");
+                System.out.println("You won't see reason so this survey is being put to rest!");
+                
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("YOUR SURVEY HAS BEEN TERMINATED");
+                System.out.println("RESULTS HAVE NOT BEEN STORED");
+                System.out.println("");
+                System.out.println("");
+                System.out.print("YOUR NAME *");
+                System.out.print(d);
+                System.out.print("* HAS BEEN GIVEN TO THE PROPER AUTHORITIES");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("PRESS ENTER TO RETAKE SURVEY");
+            }
             
             
         } else {
