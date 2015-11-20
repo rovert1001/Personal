@@ -90,7 +90,13 @@ class Main {
             
             if (f.equals ("y")) {
                 System.out.println("Well when have you been made to see reason?");
+                System.out.println("");
+                System.out.println("");
             } else if (f.equals ("n")) {
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
                 System.out.println("Well blimey you bloody bastard.");
                 System.out.println("You won't see reason so this survey is being put to rest!");
                 
@@ -116,14 +122,14 @@ class Main {
             
             
         } else {
-            System.out.println("This survey runs on y and n answers.");
-            System.out.println("Please use y and n from now on.");
+            System.out.println("THIS SURVEY RUNS ON Y & N ANSWERS.");
+            System.out.println("PLEASE USE Y & N FROM NOW ON.");
             System.out.println("");
             System.out.println("");
-            System.out.println("The survey will now restart...");
+            System.out.println("THE SURVEY WILL NOW RESTART...");
             System.out.println("");
             System.out.println("");
-            System.out.println("Press ENTER");
+            System.out.println("PRESS ENTER");
             }
    }
    
