@@ -50,11 +50,36 @@ class Main {
                 System.out.println("");
                 System.out.println("");
                 System.out.println("Good choice.");
+                System.out.println("");
+                System.out.println("On to the next question then!");
             } else if (f.equals ("n")) {
                 System.out.println("");
                 System.out.println("");
                 System.out.println("--------WAIT AN APPROPRIATE AMOUNT OF TIME AND THEN PRESS ENTER TO CONTINUE--------");
-                System.out.println("DON'T FORGET YOUR TEA");
+                System.out.println("-------------------------------DON'T FORGET YOUR TEA-------------------------------");
+                System.out.println("-----------------------------------------------------------------------------------");
+                System.out.println("-----------------------------PRESS ENTER TO END BREAK------------------------------");
+                
+                Scanner z = new Scanner(System.in);
+                String y = z.nextLine();
+                
+                
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("Did you save some tea for me?");
             }
             
 
