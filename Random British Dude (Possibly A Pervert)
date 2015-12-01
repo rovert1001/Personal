@@ -60,3 +60,29 @@ class Main {
         
     }
 }
+
+
+
+
+
+Scanner troll = new Scanner(System.in);
+        String lol = troll.nextLine();
+        
+        if (lol.equals ("Fuck you")) {
+            String.out.println("That hurts!");
+            
+        } else if (lol.equals ("Yes")) {
+            
+        } else if (lol.equals ("No")) {
+            
+        } else {
+            
+        }
+        
+        
+      
+        
+        
+        
+    }
+}
