@@ -84,13 +84,16 @@ class Main {
                 Scanner tea = new Scanner(System.in);
                 String eat = tea.next();
                 
-                if (eat.equals ("y")); {
+                if (eat.equals ("y")) {
                     System.out.println("");
                     System.out.println("");
                     System.out.println("Why thank you good sir!");
                     System.out.println("");
                     System.out.println("");
                     System.out.println("So, on to the next question good man!");
+                } else if (eat.equals ("n")) {
+                    System.out.println("Oh how unkind of you!");
+                    System.out.println("But never the less, let us forge on, sir...");
                 }
             }
             
