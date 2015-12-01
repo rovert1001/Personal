@@ -80,6 +80,18 @@ class Main {
                 System.out.println("");
                 System.out.println("");
                 System.out.println("Did you save some tea for me?");
+                
+                Scanner tea = new Scanner(System.in);
+                String eat = tea.next();
+                
+                if (eat.equals ("y")); {
+                    System.out.println("");
+                    System.out.println("");
+                    System.out.println("Why thank you good sir!");
+                    System.out.println("");
+                    System.out.println("");
+                    System.out.println("So, on to the next question good man!");
+                }
             }
             
 
@@ -114,8 +126,8 @@ class Main {
             String f = e.next();
             
             if (f.equals ("y")) {
-                System.out.println("Well when have you been made to see reason?");
-                System.out.println("");
+                System.out.println("Good, you appear to have reason in you. At least it appears that way...");
+                System.out.println("So let's try another question.");
                 System.out.println("");
             } else if (f.equals ("n")) {
                 System.out.println("");
