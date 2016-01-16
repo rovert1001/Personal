@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println("");
+    System.out.println("");
+    System.out.println("[Salutations]");
+    System.out.println("");
+    System.out.println("[I will be your guide through this experience.]");
+    System.out.println("[I will tell you all valid answers.]");
+    System.out.println("[If you do not heed my advice, the story will not be able to continue]");
+    
+    
+    System.out.println("");
+    System.out.println("Hello and welcome good sir or miss!");
+    System.out.println("");
+    System.out.println("Actually....");
+    System.out.println("");
+    System.out.println("");
+    System.out.println("Could you tell me which you are? I can't see you through the snow.");
+    System.out.println("");
+    System.out.println("[sir or miss]");
+    System.out.println("");
+    System.out.println("");
+    
+    Scanner Hi = new Scanner(System.in);
+    String Ih = Hi.next();
+    
+    if (Ih.equals ("sir")) {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Well welcome good sir and come on in, it is far too cold outside for a comfortable story!");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("'You enter the Storyteller's nearby house and walk right over to a fire and sit down.");
+        System.out.println("You find that there is hot chocolate on the table and greedily drink some. You now take time to");
+        System.out.println("reflect on how cold it is outside and the fact that you are still wearing you jacket and waterlogged");
+        System.out.println("boots. You take them off as the man comes in and tells you to dry them by the fire. You sit back");
+        System.out.println("down and the man sits opposite you. One thing is certain to you at this moment...");
+        System.out.println("");
+        System.out.println("A grand epic is about to ensue.'");
+    } else if (Ih.equals ("miss")) {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Well welcome fair lady! It is far, far too cold out to do much of any storytelling!");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("'You walk inside and take a seat by the window, there is some lemonade on the table.");
+        System.out.println("The storyteller takes a seat on the other side of the table and begins to talk'");
+    }
+    
+  }
+}
