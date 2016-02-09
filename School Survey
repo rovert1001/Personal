@@ -193,9 +193,7 @@ class Main {
                 System.out.println("RESULTS HAVE NOT BEEN STORED");
                 System.out.println("");
                 System.out.println("");
-                System.out.print("YOUR NAME *");
-                System.out.print(d);
-                System.out.print("* HAS BEEN GIVEN TO THE PROPER AUTHORITIES");
+                System.out.print("YOUR NAME *" + d + "* HAS BEEN GIVEN TO THE PROPER AUTHORITIES");
                 System.out.println("");
                 System.out.println("");
                 System.out.println("");
@@ -215,6 +213,21 @@ class Main {
             System.out.println("");
             System.out.println("PRESS ENTER");
             }
+        
+        /*if (f.equals ("n")) {
+            
+            System.out.println("");
+            System.out.println("");
+            System.out.println("And go fuck yourself. Too bad I won't remember you because the results were deleted...");
+            System.out.println("Asshole...");
+            System.out.println("");
+            System.out.println("");
+        } else {*/
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Thank you for taking this survey");
+        //}
+        
    }
    
 }
