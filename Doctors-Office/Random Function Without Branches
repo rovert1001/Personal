@@ -26,12 +26,12 @@ class Main {
     response[2] = "Did you have a troubled childhood that led to this?";
     response[3] = "Interesting, could you please elaborate?";
     response[4] = "I think you should eat your wheaties and this will go away, soon to be champion!";
-    response[5] = "Let it all out, I will be her to listen. For the next five minutes that is, then your either going to have to leave, or pay me an extra %500 per minute, doubling every 5 minutes. Thank you for your dilligency.";
+    response[5] = "Let it all out, I will be her to listen. For the next five minutes that is, then you are either going to have to leave, or pay me an extra %500 per minute, doubling every 5 minutes. Thank you for your dilligency.";
     response[6] = "I can fix it, if you know what I mean...";
     response[7] = "Is your personal life the root of this problem?";
     response[8] = "Wow, you sure are a loser!";
     response[9] = "I am not qualified to help you with that problem. Now let me take your money and you can leave";
-    response[10] = "I dont believe " + problemo + " is a vailid problem. Come back with more money, then I might think about talking you through your problem with relitively no actual help!.";
+    response[10] = "I dont believe \"" + problemo + "\" is a vailid problem. Come back with more money, then I might think about talking you through your problem with relitively no actual help!.";
         
         int random = new Random().nextInt(response.length);
         String modnar = (response[random]);
