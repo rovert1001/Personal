@@ -41,7 +41,7 @@ class Main {
 				    response[7] = "Is your personal life the root of this problem?";
 				    response[8] = "Wow, you sure are a loser!";
 				    response[9] = "I am not qualified to help you with that problem. Now let me take your money and you can leave";
-				    response[10] = "what sort of problem is\"" + solution + "\" ?";
+				    response[10] = "what sort of problem is \"" + solution + "\" ?";
             
             	int random = new Random().nextInt(response.length);
             	String modnar = (response[random]);
