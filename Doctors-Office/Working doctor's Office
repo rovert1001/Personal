@@ -1,0 +1,64 @@
+import java.util.Random;
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    
+     String[] response = new String[10];
+    
+    response[0] = "Can you please elaborate?";
+    response[1] = "What do you mean by that?";
+    response[2] = "Did you have a troubled childhood that led to this?";
+    response[3] = "Interesting, could you please elaborate?";
+    response[4] = "I think you should eat your wheaties and this will go away, soon to be champion!";
+    response[5] = "Let it all out, I will be her to listen. For the next five minutes that is.";
+    response[6] = "I can fix it, if you know what I mean...";
+    response[7] = "Is your personal life the root of this problem?";
+    response[8] = "Wow, you sure are a loser!";
+    response[9] = "I am not qualified to help you with that problem. Now let me take your money and you can leave";
+    
+    System.out.println("Welcome, the doctor has been expecting you. He will see you now.");
+    System.out.println("");
+    System.out.println("");
+    System.out.println("(Do you go in or go home?)");
+    System.out.println("");
+    
+    while (true) {
+        
+        Scanner entrance = new Scanner(System.in);
+        String enter = entrance.nextLine();
+        if (enter.equalsIgnoreCase("go on")||enter.equalsIgnoreCase("on")||enter.equalsIgnoreCase("go in")||enter.equalsIgnoreCase("in")) {
+            System.out.println("");
+            System.out.println("");
+            System.out.println("Hello, make yourself at home. Sit anywhere!");
+            System.out.println("On that couch, that chair, my chair, bring your own chair, the floor, the window, the ceiling fan, anywhere!");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("So have a seat and tell me; what is troubling you?");
+            
+        
+            while (true) {
+            	
+            	Scanner problem = new Scanner(System.in);
+            	String solution = problem.nextLine();
+            
+            int random = new Random().nextInt(response.length);
+            String modnar = (response[random]);
+        
+            System.out.println(modnar);
+                
+            }
+    
+    
+        } else if (enter.equals("go home")) {
+            System.out.println("We didn't want your money anyways...");
+            break;
+        
+    } else {
+        System.out.println("The system cannot understand that!");
+        entrance.next();
+    }
+    }
+    
+  }
+}
+   
