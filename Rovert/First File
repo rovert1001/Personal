@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.util.Random;
+class Main {
+  public static void main(String[] args) {
+      
+      System.out.println("");
+      System.out.println("Welcome Adventurer");
+      System.out.println("");
+      System.out.println("This is the game of Rovert.");
+      System.out.println("The author has no idea what to do with this game other than just do it.");
+      System.out.println("(This is my first text-based adventure so don't expect too mmuch- Rovert)");
+      System.out.println("");
+      System.out.println("");
+      System.out.println("");
+  }
+}
