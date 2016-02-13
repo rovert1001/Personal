@@ -1,0 +1,178 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    System.out.println("");
+    System.out.println("");
+    System.out.println("Welcome to Tic-Tac-Toe!");
+    System.out.println("");
+    System.out.println("Please use the following commands (in their respective positions) to place your X or O:");
+    System.out.println("");
+    System.out.println("top left, top middle, top right");
+    System.out.println("center left, center middle, center right");
+    System.out.println("bottom left, bottom middle, bottom right");
+    System.out.println("");
+    System.out.println("");
+    System.out.println("These are not case sensitive and can also be shortened to the following commands:");
+    System.out.println("");
+    System.out.println("tl, tm, tr");
+    System.out.println("cl, cm, cr");
+    System.out.println("bl, bm, br");
+    System.out.println("");
+    System.out.println("");
+    System.out.println("Also, remember that X always starts first.");
+    System.out.println("Have fun!");
+    System.out.println("");
+    System.out.println("");
+    System.out.println("");
+    System.out.println("");
+    System.out.println("   |   |   ");
+    System.out.println("---+---+---");
+    System.out.println("   |   |   ");
+    System.out.println("---+---+---");
+    System.out.println("   |   |   ");
+    System.out.println("");
+    System.out.println("");
+    
+    while (true) {
+    	
+    	Scanner turnOne = new Scanner(System.in);
+        String firstTurn = turnOne.nextLine();
+    	
+    	if (firstTurn.equalsIgnoreCase("top left")||firstTurn.equalsIgnoreCase("tl")) {
+    		System.out.println("");
+    		System.out.println("");
+    		System.out.println(" X |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   |   ");
+    		System.out.println("");
+    		System.out.println("");
+    		while (true) {
+	    		Scanner turnTwo = new Scanner(System.in);
+	        	String secondTurn = turnTwo.nextLine();
+	    		if (secondTurn.equalsIgnoreCase("top left")||firstTurn.equalsIgnoreCase("tl")) {
+	    				System.out.println("");
+    					System.out.println("That space is already occupied!");
+    					System.out.println("Please pick again.");
+	    		} else if (secondTurn.equalsIgnoreCase("top middle")||firstTurn.equalsIgnoreCase("tm")) {
+	    				System.out.println("");
+    					System.out.println("");
+			    		System.out.println(" X | O |   ");
+			    		System.out.println("---+---+---");
+			    		System.out.println("   |   |   ");
+			    		System.out.println("---+---+---");
+			    		System.out.println("   |   |   ");
+			    		System.out.println("");
+			    		System.out.println("");
+	    		} else if (secondTurn.equalsIgnoreCase("top left")||firstTurn.equalsIgnoreCase("tl")) {
+	    			
+	    		} else if (secondTurn.equalsIgnoreCase("top left")||firstTurn.equalsIgnoreCase("tl")) {
+	    			
+	    		} else if (secondTurn.equalsIgnoreCase("top left")||firstTurn.equalsIgnoreCase("tl")) {
+	    			
+	    		} else if (secondTurn.equalsIgnoreCase("top left")||firstTurn.equalsIgnoreCase("tl")) {
+	    			
+	    		} else if (secondTurn.equalsIgnoreCase("top left")||firstTurn.equalsIgnoreCase("tl")) {
+	    			
+	    		} else if (secondTurn.equalsIgnoreCase("top left")||firstTurn.equalsIgnoreCase("tl")) {
+	    			
+	    		} else {
+	    			System.out.println("");
+	    			System.out.println("Invalid Command!");
+	    			System.out.println("");
+	    		}
+    		}
+    	} else if (firstTurn.equalsIgnoreCase("top middle")||firstTurn.equalsIgnoreCase("tm")) {
+    		System.out.println("");
+    		System.out.println("");
+    		System.out.println("   | X |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   |   ");
+    		System.out.println("");
+    		System.out.println("");
+    	} else if (firstTurn.equalsIgnoreCase("top right")||firstTurn.equalsIgnoreCase("tr")) {
+    		System.out.println("");
+    		System.out.println("");
+    		System.out.println("   |   | X ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   |   ");
+    		System.out.println("");
+    		System.out.println("");
+    	} else if (firstTurn.equalsIgnoreCase("center left")||firstTurn.equalsIgnoreCase("cl")) {
+    		System.out.println("");
+    		System.out.println("");
+    		System.out.println("   |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println(" X |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   |   ");
+    		System.out.println("");
+    		System.out.println("");
+    	} else if (firstTurn.equalsIgnoreCase("center middle")||firstTurn.equalsIgnoreCase("cm")) {
+    		System.out.println("");
+    		System.out.println("");
+    		System.out.println("   |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   | X |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   |   ");
+    		System.out.println("");
+    		System.out.println("");
+    	} else if (firstTurn.equalsIgnoreCase("center right")||firstTurn.equalsIgnoreCase("cr")) {
+    		System.out.println("");
+    		System.out.println("");
+    		System.out.println("   |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   | X ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   |   ");
+    		System.out.println("");
+    		System.out.println("");
+    	} else if (firstTurn.equalsIgnoreCase("bottom left")||firstTurn.equalsIgnoreCase("bl")) {
+    		System.out.println("");
+    		System.out.println("");
+    		System.out.println("   |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println(" X |   |   ");
+    		System.out.println("");
+    		System.out.println("");
+    	} else if (firstTurn.equalsIgnoreCase("bottom middle")||firstTurn.equalsIgnoreCase("bm")) {
+    		System.out.println("");
+    		System.out.println("");
+    		System.out.println("   |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   | X |   ");
+    		System.out.println("");
+    		System.out.println("");
+    	} else if (firstTurn.equalsIgnoreCase("bottom right")||firstTurn.equalsIgnoreCase("br")) {
+    		System.out.println("");
+    		System.out.println("");
+    		System.out.println("   |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   |   ");
+    		System.out.println("---+---+---");
+    		System.out.println("   |   | X ");
+    		System.out.println("");
+    		System.out.println("");
+    	} else {
+    		System.out.println("");
+    		System.out.println("Invalid Command!");
+    		System.out.println("");
+    	}
+    }
+    
+  }
+}
+
+/*else if (.equalsIgnoreCase("")||.equalsIgnoreCase("")) {
+    		
+    	}*/
