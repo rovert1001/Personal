@@ -8,6 +8,7 @@ class Main {
     System.out.println("1");
     System.out.println("");
     System.out.println("We have liftoff!");
+    System.out.println("");
     
     for(int i = 0; i < 100001; i+=1000) {
         Scanner input = new Scanner(System.in);
@@ -22,7 +23,21 @@ class Main {
             System.out.println("Your ship starts do decelerate once you move it.");
             System.out.println("After a few seconds you start picking up speed towards the ground.");
             System.out.println("");
-            break;
+            System.out.println("Your crew sarts panicking and thinks you are mad");
+            System.out.println("");
+            System.out.println("Once they realize this is not a joke, an uprising happens and the tourists start going towards you.");
+            System.out.println("After a minute they reach you, and then you die.");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("They then safely point the ship up with the help of the first mate and then abort the mission safely");
+            System.out.println("");
+            System.out.println("with your dead corpse...");
+            System.out.println("");
+            System.out.println("YOU HAVE FAILED");
+            System.exit(0);
+            
         } else if(response.equalsIgnoreCase("up")) {
             System.out.println("");
             System.out.println("You try to move the ship up, but you soon relize that is impossible because you are already moving in the upward direction");
@@ -32,7 +47,10 @@ class Main {
         	System.out.println("Yo uhave a crew of seven, including yourself. Six of them are tourists though, and are not useful at all. The one remaining person is your first mate (that's me) and will be relaying information and helping with menuvers once you decide apon them.");
         	System.out.println("");
         } else {
+            System.out.println("");
             System.out.println("The ship pushes higher as you take no action.");
+            System.out.println("");
+            
         } if (i == 100000) {
         	System.out.println("");
         	System.out.println("");
