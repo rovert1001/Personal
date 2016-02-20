@@ -10,11 +10,13 @@ class Main {
     System.out.println("We have liftoff!");
     System.out.println("");
     
+    boolean meneuver = false;
+    
     for(int i = 0; i < 100001; i+=1000) {
         Scanner input = new Scanner(System.in);
         String response = input.nextLine();
         
-        if(response.equalsIgnoreCase("height")) {
+        if(response.equalsIgnoreCase("height") || response.equalsIgnoreCase("altitude")) {
             System.out.println("");
             System.out.println("Your altitiude is " + i);
             System.out.println("");
@@ -37,31 +39,69 @@ class Main {
             System.out.println("");
             System.out.println("YOU HAVE FAILED");
             System.exit(0);
-            
+        } else if (response.equalsIgnoreCase("meneuver") && i < 50000) {
+        	System.out.println("");
+        	System.out.println("You start to turn the ship to set up for orbit.");
+        	System.out.println("");
+        	System.out.println("It turns out that yo umade the menuever too early and the ship starts spinning uncontrollably and rips apart in a big explosion, killing all aboard.");
+        	System.out.println("");
+        	System.exit(0);
+        } else if (response.equalsIgnoreCase("meneuver") && i > 80000) {
+        	System.out.println("");
+        	System.out.println("You move the ship into position for orbit, but you sadly do it once the ship is too high.");
+        	System.out.println("");
+        	System.out.println("The meneuver was too late and orbit could not be achieved.");
+        	System.out.println("");
+        	System.out.println("The ship and all its crew make it safely back to the ground.");
+        	System.exit(0);
+        } else if (response.equalsIgnoreCase("meneuver") && 50000 < i && i < 80000) {
+        	System.out.println("");
+        	System.out.println("You make the meneuver and the ship turns slightly to the east. The ship is now prepared to orbit once in space.");
+        	System.out.println("");
         } else if(response.equalsIgnoreCase("up")) {
             System.out.println("");
             System.out.println("You try to move the ship up, but you soon relize that is impossible because you are already moving in the upward direction");
             System.out.println("");
-        } else if(response.equalsIgnoreCase("mission")) {
+        } else if(response.equalsIgnoreCase("mission") || response.equalsIgnoreCase("help")) {
+        	System.out.println("");
         	System.out.println("Your mission is to get into orbit and go to the moon. All actions must be done by you. None will be done for you on purpose.");
-        	System.out.println("Yo uhave a crew of seven, including yourself. Six of them are tourists though, and are not useful at all. The one remaining person is your first mate (that's me) and will be relaying information and helping with menuvers once you decide apon them.");
+        	System.out.println("You have a crew of seven, including yourself. Six of them are tourists though, and are not useful at all. The one remaining person is your first mate (that's me) and will be relaying information and helping with menuvers once you decide apon them.");
         	System.out.println("");
         } else {
             System.out.println("");
             System.out.println("The ship pushes higher as you take no action.");
             System.out.println("");
-            
-        } if (i == 100000) {
+        } if (meneuver = true && i == 100000) {
         	System.out.println("");
         	System.out.println("");
         	System.out.println("");
         	System.out.println("");
-        	System.out.println("You have reached the Karmin Line!");
+        	System.out.println("You have reached the Karman Line!");
         	System.out.println("Welcome to space!");
         	System.out.println("");
         	System.out.println("There is still a long way to the moon.");
+        	System.out.println("");
+        	System.out.println("The next step is to orbit earth! You are glad you made that meneuver so orbit is now possible.");
+        } else if (i == 100000) {
+        	System.out.println("");
+        	System.out.println("");
+        	System.out.println("");
+        	System.out.println("");
+        	System.out.println("You have reached the Karman Line!");
+        	System.out.println("Welcome to space!");
+        	System.out.println("");
+        	System.out.println("There is still a long way to the moon.");
+        	System.out.println("");
+        	System.out.println("The next step is to orbit earth, too bad you have not menuevered yet so the mission has failed...");
+        	System.exit(0);
         }
       
+    } for (int o = 0; o < 101; o+=5) {
+    	
+    	Scanner earth = new Scanner(System.in);
+    	String orbit = earth.nextLine();
+    	
+    	
     }
   }
 }
