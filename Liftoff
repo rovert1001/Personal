@@ -45,6 +45,7 @@ class Main {
         	System.out.println("");
         	System.out.println("It turns out that yo umade the menuever too early and the ship starts spinning uncontrollably and rips apart in a big explosion, killing all aboard.");
         	System.out.println("");
+        	System.out.println("YOU HAVE FAILED");
         	System.exit(0);
         } else if (response.equalsIgnoreCase("meneuver") && i > 80000) {
         	System.out.println("");
@@ -53,6 +54,8 @@ class Main {
         	System.out.println("The meneuver was too late and orbit could not be achieved.");
         	System.out.println("");
         	System.out.println("The ship and all its crew make it safely back to the ground.");
+        	System.out.println("");
+        	System.out.println("YOU HAVE FAILED");
         	System.exit(0);
         } else if (response.equalsIgnoreCase("meneuver") && 50000 < i && i < 80000) {
         	System.out.println("");
@@ -82,6 +85,7 @@ class Main {
         	System.out.println("There is still a long way to the moon.");
         	System.out.println("");
         	System.out.println("The next step is to orbit earth! You are glad you made that meneuver so orbit is now possible.");
+        	System.out.println("");
         } else if (i == 100000) {
         	System.out.println("");
         	System.out.println("");
@@ -93,6 +97,8 @@ class Main {
         	System.out.println("There is still a long way to the moon.");
         	System.out.println("");
         	System.out.println("The next step is to orbit earth, too bad you have not menuevered yet so the mission has failed...");
+        	System.out.println("");
+        	System.out.println("YOU HAVE FAILED");
         	System.exit(0);
         }
       
@@ -101,7 +107,11 @@ class Main {
     	Scanner earth = new Scanner(System.in);
     	String orbit = earth.nextLine();
     	
-    	
+    	if (orbit.equalsIgnoreCase("orbit")) {
+    		System.out.println("");
+    		System.out.println("The ship has completed " + o + " percent of its orbital burn.");
+    		System.out.println("");
+    	}
     }
   }
 }
