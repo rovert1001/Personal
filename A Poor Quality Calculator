@@ -16,7 +16,6 @@ class Main {
     System.out.println("");
     System.out.println("");
     System.out.println("Note the First: not case sensitive.");
-    System.out.println("Note the Second: can reselect after an equation is finished.");
     System.out.println("");
     System.out.println("");
     
@@ -33,7 +32,7 @@ class Main {
 	    	System.out.println("");
 	    	
 	    	Scanner first = new Scanner(System.in);
-	    	int number = first.nextInt();
+	    	double number = first.nextDouble();
 	    	
 	    	System.out.println("");
 	    	System.out.println("");
@@ -41,13 +40,14 @@ class Main {
 	    	System.out.println("");
 	    	
 	    	Scanner second = new Scanner(System.in);
-	    	int secnum = second.nextInt();
+	    	double secnum = second.nextDouble();
 	    	
 	    	System.out.println("");
 	    	System.out.println("Your answer is:");
 	    	System.out.println("");
 	    	System.out.println(number + secnum);
 	    	System.out.println("");
+	    	System.exit(0);
 	    	
 	    	
 	    } else if (which.equalsIgnoreCase("sub")) {
@@ -58,7 +58,7 @@ class Main {
 	    	System.out.println("");
 	    	
 	    	Scanner first = new Scanner(System.in);
-	    	int number = first.nextInt();
+	    	double number = first.nextDouble();
 	    	
 	    	System.out.println("");
 	    	System.out.println("");
@@ -66,13 +66,14 @@ class Main {
 	    	System.out.println("");
 	    	
 	    	Scanner second = new Scanner(System.in);
-	    	int secnum = second.nextInt();
+	    	double secnum = second.nextDouble();
 	    	
 	    	System.out.println("");
 	    	System.out.println("Your answer is:");
 	    	System.out.println("");
 	    	System.out.println(number - secnum);
 	    	System.out.println("");
+	    	System.exit(0);
 	    	
 	    } else if (which.equalsIgnoreCase("mul")) {
 	    
@@ -82,7 +83,7 @@ class Main {
 	    	System.out.println("");
 	    	
 	    	Scanner first = new Scanner(System.in);
-	    	int number = first.nextInt();
+	    	double number = first.nextDouble();
 	    	
 	    	System.out.println("");
 	    	System.out.println("");
@@ -90,13 +91,14 @@ class Main {
 	    	System.out.println("");
 	    	
 	    	Scanner second = new Scanner(System.in);
-	    	int secnum = second.nextInt();
+	    	double secnum = second.nextDouble();
 	    	
 	    	System.out.println("");
 	    	System.out.println("Your answer is:");
 	    	System.out.println("");
 	    	System.out.println(number * secnum);
 	    	System.out.println("");
+	    	System.exit(0);
 	    	
 	    } else if (which.equalsIgnoreCase("div")) {
 	    
@@ -106,7 +108,7 @@ class Main {
 	    	System.out.println("");
 	    	
 	    	Scanner first = new Scanner(System.in);
-	    	int number = first.nextInt();
+	    	double number = first.nextDouble();
 	    	
 	    	System.out.println("");
 	    	System.out.println("");
@@ -114,13 +116,14 @@ class Main {
 	    	System.out.println("");
 	    	
 	    	Scanner second = new Scanner(System.in);
-	    	int secnum = second.nextInt();
+	    	double secnum = second.nextDouble();
 	    	
 	    	System.out.println("");
 	    	System.out.println("Your answer is:");
 	    	System.out.println("");
 	    	System.out.println(number / secnum);
 	    	System.out.println("");
+	    	System.exit(0);
 	    	
 	    } else {
 	    	
