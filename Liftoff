@@ -9,7 +9,7 @@ class Main {
     System.out.println("");
     System.out.println("We have liftoff!");
     
-    for(int i = 0; i < 100000; i+=1000) {
+    for(int i = 0; i < 100001; i+=1000) {
         Scanner input = new Scanner(System.in);
         String response = input.nextLine();
         
@@ -25,11 +25,23 @@ class Main {
             break;
         } else if(response.equalsIgnoreCase("up")) {
             System.out.println("");
-            System.out.println("You try to move the ship to porgrade, but you soon relize that is impossible because you are already moving in the upward direction");
+            System.out.println("You try to move the ship up, but you soon relize that is impossible because you are already moving in the upward direction");
             System.out.println("");
-        } else if {
+        } else if(response.equalsIgnoreCase("mission")) {
+        	System.out.println("Your mission is to get into orbit and go to the moon. All actions must be done by you. None will be done for you on purpose.");
+        	System.out.println("Yo uhave a crew of seven, including yourself. Six of them are tourists though, and are not useful at all. The one remaining person is your first mate (that's me) and will be relaying information and helping with menuvers once you decide apon them.");
+        	System.out.println("");
         } else {
             System.out.println("The ship pushes higher as you take no action.");
+        } if (i == 100000) {
+        	System.out.println("");
+        	System.out.println("");
+        	System.out.println("");
+        	System.out.println("");
+        	System.out.println("You have reached the Karmin Line!");
+        	System.out.println("Welcome to space!");
+        	System.out.println("");
+        	System.out.println("There is still a long way to the moon.");
         }
       
     }
