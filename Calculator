@@ -17,22 +17,113 @@ class Main {
     System.out.println("");
     System.out.println("Note the First: not case sensitive.");
     System.out.println("Note the Second: can reselect after an equation is finished.");
+    System.out.println("");
+    System.out.println("");
+    
     
     while (true) {
 	    Scanner type = new Scanner(System.in);
 	    String which = type.nextLine();
 	    
 	    if (which.equalsIgnoreCase("add")) {
+	    	
 	    	System.out.println("");
 	    	System.out.println("");
 	    	System.out.println("Please enter your first number to be added.");
+	    	System.out.println("");
+	    	
+	    	Scanner first = new Scanner(System.in);
+	    	int number = first.nextInt();
+	    	
+	    	System.out.println("");
+	    	System.out.println("");
+	    	System.out.println("Please enter your second number that will be added to the first.");
+	    	System.out.println("");
+	    	
+	    	Scanner second = new Scanner(System.in);
+	    	int secnum = second.nextInt();
+	    	
+	    	System.out.println("");
+	    	System.out.println("Your answer is:");
+	    	System.out.println("");
+	    	System.out.println(" "number + secnum);
+	    	System.out.println("");
+	    	
+	    	
 	    } else if (which.equalsIgnoreCase("sub")) {
+	    
+	    	System.out.println("");
+	    	System.out.println("");
+	    	System.out.println("Please enter the number you want to be subtracted.");
+	    	System.out.println("");
+	    	
+	    	Scanner first = new Scanner(System.in);
+	    	int number = first.nextInt();
+	    	
+	    	System.out.println("");
+	    	System.out.println("");
+	    	System.out.println("Please enter the number the first will be subtracted by.");
+	    	System.out.println("");
+	    	
+	    	Scanner second = new Scanner(System.in);
+	    	int secnum = second.nextInt();
+	    	
+	    	System.out.println("");
+	    	System.out.println("Your answer is:");
+	    	System.out.println("");
+	    	System.out.println(" "number - secnum);
+	    	System.out.println("");
 	    	
 	    } else if (which.equalsIgnoreCase("mul")) {
+	    
+	    	System.out.println("");
+	    	System.out.println("");
+	    	System.out.println("Please enter your first number to be multiplied");
+	    	System.out.println("");
+	    	
+	    	Scanner first = new Scanner(System.in);
+	    	int number = first.nextInt();
+	    	
+	    	System.out.println("");
+	    	System.out.println("");
+	    	System.out.println("Please enter your second number that will be admultiplied with the first.");
+	    	System.out.println("");
+	    	
+	    	Scanner second = new Scanner(System.in);
+	    	int secnum = second.nextInt();
+	    	
+	    	System.out.println("");
+	    	System.out.println("Your answer is:");
+	    	System.out.println("");
+	    	System.out.println(" "number * secnum);
+	    	System.out.println("");
 	    	
 	    } else if (which.equalsIgnoreCase("div")) {
+	    
+	    	System.out.println("");
+	    	System.out.println("");
+	    	System.out.println("Please enter the number that will be divided.");
+	    	System.out.println("");
+	    	
+	    	Scanner first = new Scanner(System.in);
+	    	int number = first.nextInt();
+	    	
+	    	System.out.println("");
+	    	System.out.println("");
+	    	System.out.println("Please enter the number you want the first to be divided by.");
+	    	System.out.println("");
+	    	
+	    	Scanner second = new Scanner(System.in);
+	    	int secnum = second.nextInt();
+	    	
+	    	System.out.println("");
+	    	System.out.println("Your answer is:");
+	    	System.out.println("");
+	    	System.out.println(" "number / secnum);
+	    	System.out.println("");
 	    	
 	    } else {
+	    	
 	    	System.out.println("");
 	    	System.out.println("         !!!INVALID!!!");
 	    	System.out.println("!!!PLEASE TYPE A VALID ANSWER!!!");
