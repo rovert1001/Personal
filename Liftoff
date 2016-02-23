@@ -59,7 +59,7 @@ class Main {
         	System.out.println("");
         	System.out.println("YOU HAVE FAILED");
         	System.exit(0);
-        } else if (response.equalsIgnoreCase("meneuver") && 50000 < i && i < 80000 && !maneuver) {
+        } else if (response.equalsIgnoreCase("maneuver") && 50000 < i && i < 80000 && !maneuver) {
         	System.out.println("");
         	System.out.println("You make the maneuver and the ship turns slightly to the east. The ship is now prepared to orbit once in space.");
         	System.out.println("");
@@ -73,7 +73,7 @@ class Main {
         	System.out.println("Your mission is to get into orbit and go to the moon. All actions must be done by you. None will be done for you on purpose.");
         	System.out.println("You have a crew of seven, including yourself. Six of them are tourists though, and are not useful at all. The one remaining person is your first mate (that's me) and will be relaying information and helping with menuvers once you decide apon them.");
         	System.out.println("");
-        } else if (meneuver && response.equalsIgnoreCase("maneuver") && maneuver) {
+        } else if (maneuver && response.equalsIgnoreCase("maneuver") && maneuver) {
         	System.out.println("");
         	System.out.println("You have already done the maneuver so you go back to the position you were in before you completed the maneuver.");
         	System.out.println("");
@@ -117,11 +117,64 @@ class Main {
     	
     	int random = (int )(Math.random() * 50 + 1);
     	
-    	if (orbit.equalsIgnoreCase("orbit")) {
+    	if (random < 7) {
+    		System.out.println("");
+    		System.out.println("The ship starts turning retrograde very fast.");
+    		System.out.println("");
+    		
+    		Scanner momentary = new Scanner(System.in);
+    		String reaction = momentary.nextLine();
+    		
+    		if (reaction.equalsIgnoreCase("prograde")) {
+    			System.out.println("");
+    			System.out.println("You manage to get the ship back and going forwards to an orbit.");
+    			System.out.println("No damage was accumulated.");
+    			System.out.println("");
+    		} else {
+    			System.out.println("");
+    			System.out.println("Your actions do not work and you start plummeting towards the ground.");
+    			System.out.println("");
+    			
+    			int saving = (int )(Math.random() * 2 + 1);
+    			
+    			if (saving == 1) {
+    				System.out.println("");
+    				System.out.println("Sadly,the engine was turned off but the ship went rocketing into the atmosphere.");
+    				System.out.println("");
+    				
+    				int wayOfDeath = (int )(Math.random() * 2 + 1);
+    				
+    				if (wayOfDeath == 1) {
+    					System.out.println("");
+    					System.out.println("You make it throught the atmoshphere.");
+    					System.out.println("");
+    					System.out.println("Unfortunately the chutes rip off and the ship plumbets to the ground");
+    					System.out.println("resulting in the death off all aboard.");
+    				} else if (wayOfDeath == 2) {
+    					System.out.println("");
+    					System.out.println("The ship burned up in the atmoshpere, burning all crew aboard alive.");
+    					System.out.println("");
+    				}
+    				System.out.println("YOU HAVE FAILED");
+    				System.exit(0);
+    			} else if (saving == 2) {
+    				System.out.println("");
+    				System.out.println("You make it through the atmoshphere and the chutes deploy.");
+    				System.out.println("");
+    				System.out.println("The ship safely lands with all crew alive.");
+    				System.out.println("");
+    				System.out.println("YOU HAVE FAILED");
+    			}
+    		}
+    	} else if (orbit.equalsIgnoreCase("orbit")) {
     		System.out.println("");
     		System.out.println("The ship has completed " + o + " percent of its orbital burn.");
     		System.out.println("");
-    	} 
+    	} else {
+    		System.out.println("");
+    		System.out.println("No action is taken as orbit grows ever closer.");
+    		System.out.println("");
+    	}
     }
   }
 }
