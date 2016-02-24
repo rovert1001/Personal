@@ -148,7 +148,7 @@ class Main {
     					System.out.println("");
     					System.out.println("You make it throught the atmoshphere.");
     					System.out.println("");
-    					System.out.println("Unfortunately the chutes rip off and the ship plumbets to the ground");
+    					System.out.println("Unfortunately the chutes rip off and the ship plumpets to the ground");
     					System.out.println("resulting in the death off all aboard.");
     				} else if (wayOfDeath == 2) {
     					System.out.println("");
