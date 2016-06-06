@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+  while (true) {  
+    int d = 27;
+    int c = (8 * d) + 27;
+    int a = (17 * c) - 830;
+    System.out.println(a);
+    
+    Scanner first = new Scanner (System.in);
+    String One = first.nextLine();
+    
+    if (One.equalsIgnoreCase("cicada")) {
+    	System.out.println("Wow. That's pretty good.");
+    	
+    	boolean r = true;
+    	while (r = true) {
+    		System.out.println("lemon");
+    		
+    		Scanner second = new Scanner(System.in);
+    		String two = second.nextLine();
+    		
+    		if (two.equalsIgnoreCase("line")) {
+    			System.out.println("");
+    			System.exit(0);
+    		}
+    	}
+    	System.exit(0);
+    } else {
+    	System.out.println("Crrrrrrrick");
+    }
+    
+  } 
+  }
+}
