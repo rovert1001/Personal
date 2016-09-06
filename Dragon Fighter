@@ -1,0 +1,653 @@
+from random import randint
+Eg1health = 100
+eg1Dps = 2
+Eg2health = 100
+eg2Dps = 2
+Eg3health = 100
+eg3Dps = 2
+Eg4health = 100
+eg4Dps = 2
+Eg5health = 100
+eg5Dps = 2
+Eg6health = 100
+eg6Dps = 2
+ES1health = 150
+eS1Dps = 4
+ES2health = 150
+eS2Dps = 4
+ES3health = 150
+eS3Dps = 4
+dragon_health = 250
+dragon_health = 6
+def ToH():
+    x = str(raw_input("wanna play a game [y/n]"))
+    if (x == "y"):
+            print "Great lets start by creating a character"
+            create_char()
+    elif (x == "n"):
+            print "goodbye"
+    else:
+            ToH()
+char_sheet = [0,0,0]
+health = 0
+Dps = 0
+def create_char():
+    global char_sheet
+    global name
+    global c_class
+    global health
+    global Dps
+    name = str(raw_input("What is your name?"))
+    c_class = str(raw_input("what is your class?[rouge/knight/paladin]"))
+    if (c_class == "rouge"):
+            char_sheet = [name, 75, 8]
+            health = 75
+            Dps = 8
+            print char_sheet
+            start()
+    elif (c_class == "knight"):
+            char_sheet = [name, 100, 6]
+            health =  100
+            Dps = 6
+            print char_sheet
+            start()
+    elif (c_class == "paladin"):
+            char_sheet = [name, 125, 4]
+            health = 125
+            Dps = 4
+            print char_sheet
+            start()
+    else:
+            print "do not understand"
+            create_char()
+def start():
+    print name + ",  " "you are a " + c_class + " " "with the dwarven army. you are the best " + c_class + " " "in the entire army, you have been sent on a mission to deactivate one of the two magical generators holding up a barrier preventing the rest of the army to enter elvish land and invade. after a long hike you have arrived in the middle of the night at a large cirular tower on a barren hill"
+    d_1 = str(raw_input("would you like to continue to the tower or look around?[look/continue]"))
+    if (d_1 == "look"):
+            print "You look at the tower, it is made of some black stone at the top of it is a blood red light, one of the magical generator that is holding up the barrier. The barrier is blocking a route through a canyon, the route leads into the elvish captial, if your army cant take it the war will be over shortly. The barrier must fall soon or the elvish are will mobilize and reach the captial before your army does. The dwarven army is in the canyon waiting for the barrier to fall. there is nothing surrounding the tower, you descide to continue"
+            door()
+    elif (d_1 == "continue"):
+            door()
+    else:
+        print "I do not understand"
+        start()
+def door():
+    print "You walk up the the door, strange you  havent incountered any enemys yet, never the less you are on a mission and need to continue you open the door and walk in to a bleek stone room. you walk to the end of the room and open that door also. To either side of you is a hallway."
+    ghall()
+def ghall():
+    d_2 = str(raw_input("would you like to go left or right [left/right]"))
+    if (d_2 == "left"):
+        print "you turn left"
+        G_L_hall_1()
+    elif (d_2 == "right"):
+        print "you turn right"
+        G_R_hall_1()
+    else:
+        print "I do not understand"
+        ghall()
+
+
+def G_L_hall_1():
+    pickdoor = str(raw_input("you start to walk down a hall that curves to your right on the left of you is 3 room. would you like to enter the first door?[y/n]"))
+    if (pickdoor == "y"):
+        G_L_room_1()
+    elif (pickdoor == "n"):
+        print "you move on"
+        WG_L_room_2()
+    else:
+        print "I do not understand"
+def G_L_room_1():
+    print "you walk into the room, standing in the corner is a figure you start to approach it. It's a goul prepare to fight!"
+    goul_fight1()
+def G_L_room_1two():
+    global health
+    print "you search the room and find a potions, it increses your health by 8!"
+    health = health + 8
+    WG_L_room_2()
+def G_L_room_2():
+    print "you walk into the room, standing in the corner is a figure you start to approach it. It's a goul prepare to fight!"
+    goul_fight2()
+def G_L_room_2two():
+    global health
+    print "you search the room and find a potions, it increses your health by 8!"
+    health = health + 8
+    WG_L_room_3()
+def G_L_room_3():
+    print "you walk into the room, standing in the corner is a figure you start to approach it. It's a goul prepare to fight!"
+    goul_fight3()
+def G_L_room_3two():
+    global health
+    print "you search the room and find a potions, it increses your health by 8!"
+    health = health + 8
+    WL_stairs()
+def WG_L_room_2():
+    Thisdoor = str(raw_input("you walk in the hall and come to another room, would you like to go into this room?[y/n]"))
+    if (Thisdoor == "y"):
+        G_L_room_2()
+    elif (Thisdoor == "n"):
+        WG_L_room_3()
+    else:
+        print "I do not understand"
+        WG_l_room_2()
+def WG_L_room_3():
+    Thisdoor = str(raw_input("you walk in the hall and come to another room, would you like to go into this room?[y/n]"))
+    if (Thisdoor == "y"):
+        G_L_room_3()
+    elif (Thisdoor == "n"):
+        WL_stairs()
+
+def WL_stairs():
+    x = str(raw_input("you come to two sets of stairs on that goes up one those go down. you can either go up, down, or continue strait to the go down the hall you missed(UP WILL BRING YOU TO THE BOSS, IF YOU ALREADY DID BOTH HALLS DO NOT ENTER CONTINUE!)[up/down/continue]"))
+    if (x == "up"):
+        boss()
+    elif (x == "down"):
+        basement()
+    elif (x == "continue"):
+        G_R_hall_1()
+def WR_stairs():
+    x = str(raw_input("you come to two sets of stairs on that goes up one those go down. you can either go up, down, or continue strait to the go down the hall you missed(IF YOU ALREADY DID BOTH HALLS DO NOT ENTER CONTINUE!)[up/down/contiue]"))
+    if (x == "up"):
+        print "boss()"
+    elif (x == "down"):
+        print "basement()"
+    elif (x == "continue"):
+        G_L_hall_1()
+    else:
+        print "I do not understand"
+        WR_stairs()
+
+def G_R_hall_1():
+    pickdoor = str(raw_input("you start to walk down a hall that curves to your left on the right of you is 3 room. would you like to enter the first door?[y/n]"))
+    if (pickdoor == "y"):
+        G_R_room_1()
+    elif (pickdoor == "n"):
+        print "you move on"
+        wG_R_room_2()
+    else:
+        print "I do not understand"
+def G_R_room_1():
+    print "you walk into the room, standing in the corner is a figure you start to approach it. It's a goul prepare to fight!"
+    goul_fight4()
+def G_R_room_1two():
+    global health
+    print "you search the room and find a potions, it increses your health by 8!"
+    health = health + 8
+    WG_R_room_2()
+def G_R_room_2():
+    print "you walk into the room, standing in the corner is a figure you start to approach it. It's a goul prepare to fight!"
+    goul_fight5()
+def G_R_room_2two():
+    global health
+    print "you search the room and find a potions, it increses your health by 8!"
+    health = health + 8
+    WG_R_room_3()
+def G_R_room_3():
+    print "you walk into the room, standing in the corner is a figure you start to approach it. It's a goul prepare to fight!"
+    goul_figh6()
+def G_R_room_3two():
+    global health
+    print "you search the room and find a potions, it increses your health by 8!"
+    health = health + 8
+    WR_stairs()
+def WG_R_room_2():
+    Thisdoor = str(raw_input("you walk in the hall and come to another room, would you like to go into this room?[y/n]"))
+    if (Thisdoor == "y"):
+        G_R_room_2()
+    elif (Thisdoor == "n"):
+        WG_R_room_3()
+    else:
+        print "I do not understand"
+        WG_R_room_2()
+def WG_R_room_3():
+    Thisdoor = str(raw_input("you walk in the hall and come to another room, would you like to go into this room?[y/n]"))
+    if (Thisdoor == "y"):
+        G_L_room_3()
+    elif (Thisdoor == "n"):
+        WR_stairs()
+def basement():
+    print "you walk down the stairs to the basement, you find 3 spiders! prepare to fight the first one"
+    spider_fight1()
+
+def goul_fight1():
+    global health
+    global Dps 
+    global Eg1health
+    global eg1Dps
+    typeofa = str(raw_input("how would you like to attack [stab/slash/hack]"))
+    if (typeofa == "stab"):
+        Eg1health = Eg1health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg1health)
+        DYW1()
+    elif (typeofa == "slash"):
+        Eg1health = Eg1health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg1health)
+        DYW1()
+    elif (typeofa == "hack"):
+        Eg1health = Eg1health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg1health)
+        DYW1()
+    else:
+        print "I do not understand"
+        goul_fight1()
+def DYW1():
+    global health
+    global Dps 
+    global Eg1health
+    global eg1Dps
+    if (Eg1health <= 0):
+        print "you win"
+        G_L_room_1two()
+    else:
+        G1attack()
+def G1attack():
+    global health
+    global Dps 
+    global Eg1health
+    global eg1Dps
+    health = health - eg1Dps
+    print "your health is " + str(health)
+    if (health > 0):
+        goul_fight1()
+    else:
+        print "game over"
+def goul_fight2():
+    global health
+    global Dps 
+    global Eg2health
+    global eg2Dps
+    typeofa = str(raw_input("how would you like to attack [stab/slash/hack]"))
+    if (typeofa == "stab"):
+        Eg2health = Eg2health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg2health)
+        DYW2()
+    elif (typeofa == "slash"):
+        Eg2health = Eg2health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg2health)
+        DYW2()
+    elif (typeofa == "hack"):
+        Eg2health = Eg2health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg2health)
+        DYW2()
+    else:
+        print "I do not understand"
+        goul_fight2()
+def DYW2():
+    global health
+    global Dps 
+    global Eg2health
+    global eg2Dps
+    if (Eg2health <= 0):
+        print "you win"
+        G_L_room_2two()
+    else:
+        G2attack()
+def G2attack():
+    global health
+    global Dps 
+    global Eg2health
+    global eg2Dps
+    health = health - eg2Dps
+    print "your health is " + str(health)
+    if (health > 0):
+        goul_fight2()
+    else:
+        print "game over"
+def goul_fight3():
+    global health
+    global Dps 
+    global Eg3health
+    global eg3Dps
+    typeofa = str(raw_input("how would you like to attack [stab/slash/hack]"))
+    if (typeofa == "stab"):
+        Eg3health = Eg3health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg3health)
+        DYW3()
+    elif (typeofa == "slash"):
+        Eg3health = Eg3health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg3health)
+        DYW3()
+    elif (typeofa == "hack"):
+        Eg3health = Eg3health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg3health)
+        DYW3()
+    else:
+        goul_fight3()
+def DYW3():
+    global health
+    global Dps 
+    global Eg3health
+    global eg3Dps
+    if (Eg3health <= 0):
+        print "you win"
+        G_R_room_3two()
+    else:
+        G3attack()
+def G3attack():
+    global health
+    global Dps 
+    global Eg3health
+    global eg3Dps
+    health = health - eg2Dps
+    print "your health is " + str(health)
+    if (health > 0):
+        goul_fight3()
+    else:
+        print "game over"    
+def goul_fight4():
+    global health
+    global Dps 
+    global Eg4health
+    global eg4Dps
+    typeofa = str(raw_input("how would you like to attack [stab/slash/hack]"))
+    if (typeofa == "stab"):
+        Eg4health = Eg4health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg4health)
+        DYW4()
+    elif (typeofa == "slash"):
+        Eg4health = Eg4health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg4health)
+        DYW4()
+    elif (typeofa == "hack"):
+        Eg4health = Eg4health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg4health)
+        DYW4()
+    else:
+        print "I do not understand"
+        goul_fight4()
+def DYW4():
+    global health
+    global Dps 
+    global Eg4health
+    global eg4Dps
+    if (Eg4health <= 0):
+        print "you win"
+        G_R_room_1two()
+    else:
+        G4attack()
+def G4attack():
+    global health
+    global Dps 
+    global Eg4health
+    global eg4Dps
+    health = health - eg4Dps
+    print "your health is " + str(health)
+    if (health > 0):
+        goul_fight4()
+    else:
+        print "game over"
+def goul_fight5():
+    global health
+    global Dps 
+    global Eg5health
+    global eg5Dps
+    typeofa = str(raw_input("how would you like to attack [stab/slash/hack]"))
+    if (typeofa == "stab"):
+        Eg5health = Eg5health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg5health)
+        DYW5()
+    elif (typeofa == "slash"):
+        Eg5health = Eg5health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg5health)
+        DYW5()
+    elif (typeofa == "hack"):
+        Eg5health = Eg5health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg5health)
+        DYW5()
+    else:
+        goul_fight5()
+def DYW5():
+    global health
+    global Dps 
+    global Eg5health
+    global eg5Dps
+    if (Eg5health <= 0):
+        print "you win"
+        G_R_room_2two()
+    else:
+        G5attack()
+def G5attack():
+    global health
+    global Dps 
+    global Eg5health
+    global eg5Dps
+    health = health - eg5Dps
+    print "your health is " + str(health)
+    if (health > 0):
+        goul_fight5()
+    else:
+        print "game over"
+def goul_fight6():
+    global health
+    global Dps 
+    global Eg6health
+    global eg6Dps
+    typeofa = str(raw_input("how would you like to attack [stab/slash/hack]"))
+    if (typeofa == "stab"):
+        Eg6health = Eg6health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg6health)
+        DYW5()
+    elif (typeofa == "slash"):
+        Eg6health = Eg6health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg6health)
+        DYW5()
+    elif (typeofa == "hack"):
+        Eg6health = Eg6health - Dps * randint (3,5)
+        print "your enemies health is " + str(Eg6health)
+        DYW6()
+    else:
+        goul_fight5()
+def DYW6():
+    global health
+    global Dps 
+    global Eg6health
+    global eg6Dps
+    if (Eg6health <= 0):
+        print "you win"
+        G_R_room_3two()
+    else:
+        G6attack()
+def G6attack():
+    global health
+    global Dps 
+    global Eg6health
+    global eg6Dps
+    health = health - eg6Dps
+    print "your health is " + str(health)
+    if (health > 0):
+        goul_fight6()
+    else:
+        print "game over"
+
+def spider_fight1():
+    global health
+    global Dps 
+    global ES1health
+    global eS1Dps
+    typeofa = str(raw_input("how would you like to attack [stab/slash/hack]"))
+    if (typeofa == "stab"):
+        ES1health = ES1health - Dps * randint (3,5)
+        print "your enemies health is " + str(ES1health)
+        DYW7()
+    elif (typeofa == "slash"):
+        ES1health = ES1health - Dps * randint (3,5)
+        print "your enemies health is " + str(ES1health)
+        DYW7()
+    elif (typeofa == "hack"):
+        ES1health = ES1health - Dps * randint (3,5)
+        print "your enemies health is " + str(ES1health)
+        DYW7()
+    else:
+        print "I do not understand"
+        spider_fight1()
+def DYW7():
+    global health
+    global Dps 
+    global ES1health
+    global eS1Dps
+    if (ES1health <= 0):
+        print "you win"
+        spider_fight2()
+    else:
+        S1attack()
+def S1attack():
+    global health
+    global Dps 
+    global ES1health
+    global eS1Dps
+    health = health - eS1Dps
+    print "your health is " + str(health)
+    if (health > 0):
+        spider_fight1()
+    else:
+        print "game over"
+def spider_fight2():
+    global health
+    global Dps 
+    global ES2health
+    global eS2Dps
+    typeofa = str(raw_input("the second spider comes at you! How would you like to attack [stab/slash/hack]"))
+    if (typeofa == "stab"):
+        ES2health = ES2health - Dps * randint (3,5)
+        print "your enemies health is " + str(ES2health)
+        DYW8()
+    elif (typeofa == "slash"):
+        ES2health = ES2health - Dps * randint (3,5)
+        print "your enemies health is " + str(ES2health)
+        DYW8()
+    elif (typeofa == "hack"):
+        ES2health = ES2health - Dps * randint (3,5)
+        print "your enemies health is " + str(ES2health)
+        DYW8()
+    else:
+        print "I do not understand"
+        spider_fight2()
+def DYW8():
+    global health
+    global Dps 
+    global ES2health
+    global eS2Dps
+    if (ES2health <= 0):
+        print "you win"
+        spider_fight3()
+    else:
+        S2attack()
+def S2attack():
+    global health
+    global Dps 
+    global ES2health
+    global eS2Dps
+    health = health - eS2Dps
+    print "your health is " + str(health)
+    if (health > 0):
+        spider_fight2()
+    else:
+        print "game over"
+def spider_fight3():
+    global health
+    global Dps 
+    global ES3health
+    global eS3Dps
+    typeofa = str(raw_input("the third spider comes at you! How would you like to attack [stab/slash/hack]"))
+    if (typeofa == "stab"):
+        ES3health = ES3health - Dps * randint (3,5)
+        print "your enemies health is " + str(ES3health)
+        DYW9()
+    elif (typeofa == "slash"):
+        ES3health = ES3health - Dps * randint (3,5)
+        print "your enemies health is " + str(ES3health)
+        DYW9()
+    elif (typeofa == "hack"):
+        ES3health = ES3health - Dps * randint (3,5)
+        print "your enemies health is " + str(ES3health)
+        DYW9()
+    else:
+        print "I do not understand"
+        spider_fight2()
+def DYW9():
+    global health
+    global Dps 
+    global ES3health
+    global eS3Dps
+    if (ES3health <= 0):
+        print "you win"
+        LOOT()
+    else:
+        S3attack()
+def S3attack():
+    global health
+    global Dps 
+    global ES3health
+    global eS3Dps
+    health = health - eS3Dps
+    print "your health is " + str(health)
+    if (health > 0):
+        spider_fight3()
+    else:
+        print "game over"
+def LOOT():
+    global health
+    global Dps 
+    x = str(raw_input("you killed all the spiders at the end of the hall is well, you walk to well. you hear a voice coming from the well it says: i will grant one wish, do you want be able to kill better(+ 4 dps) or survive better(+ 50 health)[dps/health]"))
+    if (x == "dps"):
+        print "so be it"
+        Dps = Dps + 4
+        return_to_boss()
+    elif (x == "health"):
+        print "so be it"
+        health = health + 100
+        return_to_boss()
+    else:
+        print "try again"
+def return_to_boss():
+    print "you walk back to the stairs and proceed to walk back up them you return to the ground floor and prepare to make the clim to the top of the tower, the boss awaits you"
+    boss()
+
+def boss():
+    print "you walk up the stairs to the top of the tower, you open at hatch which leads to the roof. A YOUNG DRAGON, you prepare to fight it"
+    bossfight()
+def bossfight():
+    global health
+    global Dps 
+    global dragon_health
+    global dragon_Dps
+    typeofa = str(raw_input("how would you like to attack the dragon [stab/slash/hack]"))
+    if (typeofa == "stab"):
+        dragon_health = dragon_health - Dps * randint (3,5)
+        print "the dragon's health is " + str(dragon_health)
+        DYWG()
+    elif (typeofa == "slash"):
+        dragon_health = dragon_health - Dps * randint (3,5)
+        print "the dragon's health is " + str(dragon_health)
+        DYWG()
+    elif (typeofa == "hack"):
+        dragon_health = dragon_health - Dps * randint (3,5)
+        print "the dragon's health is " + str(dragon_health)
+        DYWG()
+    else:
+        print "I do not understand"
+        bossfight()
+def DYWG():
+    global health
+    global Dps 
+    global dragon_health
+    global dragon_Dps
+    if (dragon_health <= 0):
+        you_win()
+    else:
+        dragon_attack()
+def dragon_attack():
+    global health
+    global Dps 
+    global dragon_health
+    global dragon_Dps
+    health = health - dragon_Dps
+    print "your health is " + str(health)
+    if (health > 0):
+        bossfight()
+    else:
+        print "game over"
+def you_win():
+    print "YOU WIN, you slay the dragon and turn off the magical barrier allowing the dwarven army to pass and proceed to rejoin the army"
+    credits()
+def credits:
+    print "programmer Michael Rash. special thanks to andrew and taylor for getting me out of copying a chapter in biology"
