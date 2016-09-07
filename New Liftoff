@@ -217,7 +217,7 @@ class Main {
     				System.exit(0);
     			} else if (saving == 2) {
     				System.out.println("");
-    				System.out.println("You make it through the atmoshphere and the chutes deploy.");
+    				System.out.println("You make it back into the atmoshphere safely and the chutes deploy.");
     				System.out.println("");
     				System.out.println("The ship safely lands with all crew alive.");
     				System.out.println("");
