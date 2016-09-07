@@ -104,13 +104,71 @@ class Main {
         	System.out.println("");
         	System.out.println("There is still a long way to the moon.");
         	System.out.println("");
-        	System.out.println("The next step is to orbit earth, too bad you have not menuevered yet so the mission has failed...");
+        	System.out.println("The next step is to orbit earth, too bad you have not menuevered yet so the mission has failed,");
+        	System.out.println("at least everybody makes it back safely...");
         	System.out.println("");
         	System.out.println("YOU HAVE FAILED");
         	System.exit(0);
         }
       
     } for (int o = 0; o < 101; o+=5) {
+    	
+    		String[] orbiting = new String[10];
+    		
+    		orbiting[0] = 	""
+    						+
+    						"No action is taken as orbit grows ever closer."
+    						+
+    						"";
+    		
+    		orbiting[1] = 	""
+    						+
+    						"You hear one of the passengers remark about the view."
+    						+
+    						"";
+    		
+    		orbiting[2] = 	""
+    						+
+    						"You pay attention to the slight and rythmic rocking of the ship."
+    						+
+    						"";
+    		
+    		orbiting[3] = 	""
+    						+
+    						"A passenger points out a constellation to another."
+    						+
+    						"";
+    		
+    		orbiting[4] = 	""
+    						+
+    						"No action is taken as orbit grows ever closer."
+    						+
+    						"";
+    		orbiting[5] = 	""
+    						+
+    						"No action is taken as orbit grows ever closer."
+    						+
+    						"";
+    		orbiting[6] = 	""
+    						+
+    						"No action is taken as orbit grows ever closer."
+    						+
+    						"";
+    		orbiting[7] = 	""
+    						+
+    						"No action is taken as orbit grows ever closer."
+    						+
+    						"";
+    		orbiting[8] = 	""
+    						+
+    						"No action is taken as orbit grows ever closer."
+    						+
+    						"";
+    		orbiting[9] = 	""
+    						+
+    						"No action is taken as orbit grows ever closer."
+    						+
+    						"";
     	
     	Scanner earth = new Scanner(System.in);
     	String orbit = earth.nextLine();
@@ -167,15 +225,30 @@ class Main {
     				System.exit(0);
     			}
     		}
+    	} else if (random == 8) {
+    		System.out.println("");
+    		System.out.println("One of the passengers comments on the remarkable view.");
+    		System.out.println("");
     	} else if (orbit.equalsIgnoreCase("orbit")) {
     		System.out.println("");
     		System.out.println("The ship has completed " + o + " percent of its orbital burn.");
     		System.out.println("");
     	} else {
+    		
+    		int orbitOutput = new Random().nextInt(orbiting.length);
+    		String outputOrbit = (orbiting[orbitOutput]);
+    		
     		System.out.println("");
-    		System.out.println("No action is taken as orbit grows ever closer.");
+    		System.out.println(outputOrbit);
     		System.out.println("");
     		
+    		
+
+    		
+    	/*	System.out.println("");
+    		System.out.println("No action is taken as orbit grows ever closer.");
+    		System.out.println("");
+    	*/	
     		
     		
     		
