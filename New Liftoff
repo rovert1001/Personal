@@ -221,6 +221,20 @@ class Main {
     				System.out.println("");
     				System.out.println("The ship safely lands with all crew alive.");
     				System.out.println("");
+    				System.out.println("You have landed in sombody's yard and multiple people exit the abode.");
+    				System.out.println("Do you talk to them or stay in the ship and end the mission now?");
+    				System.out.println("");
+    				System.out.println("(STAY or TALK?");
+    				
+    				Scanner shipExit = new Scanne(System.in);
+    				String exitShip = shipExit.nextLine();
+    				
+    				if (exitShip.equalsIgnoreCase("talk")) {
+    					
+    				} else if (exitShip.equalsIgnoreCase("stay")) {
+    					
+    				}
+    				
     				System.out.println("YOU HAVE FAILED");
     				System.exit(0);
     			}
