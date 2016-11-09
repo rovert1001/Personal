@@ -1,0 +1,45 @@
+import java.util.Scanner;
+import java.util.Random;
+class Main {
+  public static void main(String[] args) {
+    
+    System.out.println("");
+    System.out.println("Hello");
+    System.out.println("Welcome to this review game!");
+    System.out.println("");
+    System.out.println("Type '/help' for help with the game");
+    System.out.println("");
+    System.out.println("Let's begin");
+    System.out.println("");
+    
+    String defintions = new String [5] {
+    	
+    	
+    }
+    
+    while (true) {
+    
+	    Scanner answer = new Scanner(System.in);
+	    String answerResponse = answer.nextLine();
+	    
+	    if (answerResponse.equalsIgnoreCase("/help")) {
+	    	
+	    	System.out.println("");
+	    	System.out.println("GAME RULES");
+	    	System.out.println("----------");
+	    	System.out.println("");
+	    	System.out.println("You will be given a definition and you must type the correct word that fits the definition.");
+	    	System.out.println("");
+	    	System.out.println("If you want a word list type '/wordlist'");
+	    	System.out.println("If a wrong command is typed the game will take it as an incorrect answer.");
+	    	System.out.println("");
+	    	System.out.println("The game will continue endlessly and terms will be repeated at random.");
+	    	System.out.println("Enjoy!");
+	    	
+	    } else if (answerResponse.equalsIgnoreCase("/wordlist")) {
+	    	
+	    }
+    
+    } 
+  }
+}
