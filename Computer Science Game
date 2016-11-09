@@ -12,8 +12,17 @@ class Main {
     System.out.println("Let's begin");
     System.out.println("");
     
-    String defintions = new String [5] {
+    String definitions = new String [5] {
     	
+    	definitions[0] = "A server that provides a specific type of resource to its client, such as just printing.";
+    	definitions[1] = "Physical pieces of equipment used to transport data from one computer or peripheral device on the network.";
+    	definitions[2] = "A device that is connected to a computer and is controlled by its microprocessor.";
+    	definitions[3] = "A network computer that has no local storage and relies on servers for applications, data storage, and administration.";
+    	definitions[4] = "Distinct pieces of information, such as files or entries in a database.";
+    	definitions[5] = "An array of hard dives that mirror or duplicate other drives. Should the primary hard drive fail, the second drive can be substituted for the failed drive with little or no down time.";
+    	definitions[6] = "A server that provides many different services to its client computers, such as file retrieval, printing, and e-mailing.";
+    	definitions[7] = "Computers that work behind-the-scenes to provide (serve) shared resources to network users or clients";
+    	definitions[8] = "A network computer that requests, or orders, information from a server.";
     	
     }
     
