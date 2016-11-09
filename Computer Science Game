@@ -12,7 +12,7 @@ class Main {
     System.out.println("Let's begin");
     System.out.println("");
     
-    String definitions = new String [5] {
+    String definitions = new String [8] {
     	
     	definitions[0] = "A server that provides a specific type of resource to its client, such as just printing.";
     	definitions[1] = "Physical pieces of equipment used to transport data from one computer or peripheral device on the network.";
