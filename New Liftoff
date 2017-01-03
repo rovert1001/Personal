@@ -11,6 +11,7 @@ class Main {
     System.out.println("");
     
     boolean maneuver = false;
+    int orbitPercent = (int )(Math.random() * 10 + 1);
     
     for(int i = 0; i < 100001; i+=1000) {
         Scanner input = new Scanner(System.in);
@@ -111,7 +112,7 @@ class Main {
         	System.exit(0);
         }
       
-    } for (int o = 0; o < 101; o+=5) {
+    } for (int o = 0; o < 101; o+=orbitPercent) {
     	
     		String[] orbiting = new String[10];
     		
@@ -226,7 +227,7 @@ class Main {
     				System.out.println("");
     				System.out.println("(STAY or TALK?");
     				
-    				Scanner shipExit = new Scanne(System.in);
+    				Scanner shipExit = new Scanner(System.in);
     				String exitShip = shipExit.nextLine();
     				
     				if (exitShip.equalsIgnoreCase("talk")) {
