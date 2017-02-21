@@ -13,7 +13,7 @@ class Main {
     
     double sideC = (sideB * sideB)+(sideA * sideA);
     
-    System.out.println("That must mean the third side is " + Math.sqrt(sideC));
+    System.out.println("That must mean the third side is " + Math.sqrt(sideC) + "!");
     
     System.exit(0);
 
