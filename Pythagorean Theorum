@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Choose a side length for the triangle:");
+    
+    Scanner a = new Scanner(System.in);
+    double sideA = a.nextDouble();
+    
+    System.out.println("Choose another side length for the triangle:");
+    
+    Scanner b = new Scanner(System.in);
+    double sideB = b.nextDouble();
+    
+    double sideC = (sideB * sideB)+(sideA * sideA);
+    
+    System.out.println("That must mean the third side is " + Math.sqrt(sideC));
+    
+    System.exit(0);
+
+    
+  }
+}
