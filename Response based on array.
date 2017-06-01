@@ -1,0 +1,2 @@
+if (modnar==response[0]) {
+            	  System.out.println("Clever girl...");
